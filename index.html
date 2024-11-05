@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>enhacemodel.ai</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    
+        <!-- Favicon -->
+        <link href="img/enhc logo.png" rel="icon"> <!-- Update this path to your logo file -->
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+<body style="overflow-x: hidden;">
+    <div class="bg-white p-0" style="width:100%;">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="position-relative p-0" style="width:100%;display: flex;flex-direction: column;align-items: center;">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-search me-2"></i>enhc<span class="fs-5"></span></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                               
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <div class="container-fluid py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-0">
+                  <div class="row g-4 py-5 align-items-center"> <!-- Changed g-5 to g-0 to remove gap -->
+                    
+                    <!-- Text Content -->
+                    <div class="col-lg-6 text-center text-lg-start no-border">
+                      <h1 class="text-white mb-4 animated zoomIn">
+                        Empower Your Business with Tailored Solutions
+                      </h1>
+                      <p class="text-white mb-4 animated fadeIn">
+                        Unlock your business's true potential with our cutting-edge models and AI-powered chatbots, built to streamline operations and enhance customer engagement.
+                      </p>
+                      <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInLeft">Free Quote</a>
+                        <a href="contact.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                      </div>
+                    </div>
+                    
+                    <!-- Hero Image - Hidden on Mobile -->
+                    <div class="col-lg-4 text-center d-none d-lg-block no-border">
+                      <img src="img/hero.png" class="img-fluid animated zoomIn" alt="Hero Image">
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- About Start -->
+        <div class=" py-5" style="width:100%;">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-2">
+                            <h6 class="position-relative text-primary ps-4">About Us</h6>
+                            <h2 class="mt-2">Enhancing Businesses with AI-Powered Solutions
+                            </h2>
+                        </div>
+                        <p class="mb-4">At enhc, we are dedicated to helping businesses grow by offering cutting-edge AI models and intelligent chatbots. Whether you’re looking to streamline customer interactions or optimize your operations, our team provides tailored solutions designed to meet your unique business needs.
+
+                            We specialize in developing advanced AI technologies that empower your business to stay ahead in today’s fast-evolving market. From improving customer engagement to automating critical processes, we’re here to support your success every step of the way.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>AI-Driven Business Models</h6>
+                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Intelligent Chatbot Solutions
+                                </h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support and Expertise</h6>
+                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-4">
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
+                            <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a> -->
+                            <a class="btn btn-outline-primary btn-square me-3" href="https://x.com/enhacemode"l><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary btn-square me-3" href="https://www.instagram.com/enhancemodel.ai/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/company/enhancemodel-ai/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Newsletter Start -->
+        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp">
+            <div class="container px-lg-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="newsletter-content text-white p-4">
+                            <h3 class="text-white mb-3">Stay Connected with enhancemodel.ai</h3>
+                            <p class="small mb-4">Get the latest updates, insights, and offers straight to your inbox.</p>
+                            <form id="newsletterForm" class="position-relative">
+                                <input type="email" 
+                                       id="email-input"
+                                       class="form-control border-0 rounded-pill w-100 ps-4 pe-5 py-3" 
+                                       placeholder="Enter your email" 
+                                       required
+                                       style="height: 48px;">
+                                <button type="submit" 
+                                        class="btn btn-dark rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-1 me-2">
+                                    <i class="fas fa-paper-plane me-1"></i>
+                                    Subscribe
+                                    <span id="loadingSpinner" class="spinner-border spinner-border-sm ms-1" style="display: none;"></span>
+                                </button>
+                            </form>
+                            <div id="alertContainer" class="mt-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                        <img src="img/newsletter.png" class="newsletter-img img-fluid mt-5" alt="Newsletter Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Newsletter End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5 justify-content-center">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
+                    <h2 class="mt-2">What Solutions We Provide</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column align-items-center text-center rounded" style="height: 100%; padding: 20px;">
+                            <div class="service-icon flex-shrink-0 mb-4">
+                                <!-- Replace the icon with an image -->
+                                <img src="img/chatbot.png" alt="" class="img-fluid" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">AI-Powered Chatbots</h5>
+                            <p class="mb-auto">Engage with customers more effectively using intelligent chatbots tailored to your business needs, offering seamless interaction and support around the clock.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    
+                                        <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+
+                                <img src="img/process.png" alt="" class="img-fluid" style="width: 60px; height: 60px;">
+                               
+                            </div>
+                            <h5 class="mb-3">Business Process Automation</h5>
+                            <p>Streamline repetitive tasks, boost productivity, and focus on core operations by implementing automated solutions that simplify your workflow.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                               
+                                <img src="img/data-science.png" alt="" class="img-fluid" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3"> Advanced Data Analytics & AI Modeling</h5>
+                            <p>Leverage data with sophisticated AI models that offer deep insights and predictive analytics to drive smarter business decisions and optimize your processes.
+
+                            </p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <img src="img/office.png" alt="" class="img-fluid" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Consulting and Strategy
+                            </h5>
+                            <p>Partner with us to develop actionable strategies that align with your long-term vision, leveraging AI and data-driven approaches for sustainable growth.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <img src="img/data-science.png" alt="" class="img-fluid" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Custom Software Development</h5>
+                            <p>Get tailored software solutions designed specifically for your business needs, from AI-integrated platforms to specialized tools that streamline operations and drive results.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Portfolio Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Our Projects</h6>
+                    <h2 class="mt-2">Recently Launched Projects</h2>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="btn px-3 pe-4 active" data-filter="*">All</li>
+                            <li class="btn px-3 pe-4" data-filter=".first">AI chatbot</li>
+                            <li class="btn px-3 pe-4" data-filter=".second">AI models</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden" style="box-shadow: 0px 0px 8px 0px rgba(130, 130, 130, 0.669);">
+                            <img class="img-fluid w-100" src="img/fitness bot.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="img/fitness bot.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class="text-white"><i class="fa fa-folder me-2"></i>AI Chatbot</small>
+                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Fitness chatbot</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden" style="box-shadow: 0px 0px 8px 0px rgba(130, 130, 130, 0.669);">
+                            <img class="img-fluid w-100" src="img/SEO bot.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="img/SEO bot.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class="text-white"><i class="fa fa-folder me-2"></i>AI Model</small>
+                                    <a class="h5 d-block text-white mt-1 mb-0" href="">SEO chatbot</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden" style="box-shadow: 0px 0px 8px 0px rgba(130, 130, 130, 0.669);">
+                            <img class="img-fluid w-100" src="img/legel bot.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="img/legel bot.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class="text-white"><i class="fa fa-folder me-2"></i>AI Chatbot</small>
+                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Law chatbot model </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <img class="img-fluid w-100" src="img/medical bot.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="img/medical bot.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Ai Model</small>
+                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Medicine chatbot</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
+                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class="text-white"><i class="fa fa-folder me-2"></i>AI Model</small>
+                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Stock prediction</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+
+        <!-- Testimonial Start -->
+        
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5" >
+            <div class="container px-lg-5" style="margin: -5%;">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
+                    <h2 class="mt-2">Meet Our Team Members</h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" \>
+                        <div class="team-item">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://www.facebook.com/profile.php?id=61558144948067&sfnsn=wiwspwa&mibextid=RUbZ1f"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://twitter.com/gajer50960"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://www.instagram.com/theharshgajera/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://www.linkedin.com/in/gajeraharsh/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <img class="img-fluid rounded w-100" src="img/gajera pic_main.jpg" alt="">
+                            </div>
+                            <div class="px-4 py-3">
+                                <h5 class="fw-bold m-0">Harsh Gajera</h5>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                                    <!-- <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a> -->
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://x.com/Kavypat18"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://www.instagram.com/kavyp_18/"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square text-primary bg-white my-1" href="https://www.linkedin.com/in/kavy-patel-7a22a4230/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <img class="img-fluid rounded w-100" src="img/kavy pic2.jpg" alt="">
+                            </div>
+                            <div class="px-4 py-3">
+                                <h5 class="fw-bold m-0">Kavy Patel</h5>
+                                <small>CTO</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+
+        <!-- Footer Start -->
+       <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5 px-lg-5">
+        <div class="row g-5 justify-content-between">
+            <div class="col-md-6 col-lg-4">
+                <h5 class="text-white mb-4">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>B 703 Flower Valley Nikol, Ahmedabad, India, 382350</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+91 9879985607</p>
+                <p><i class="fa fa-envelope me-3"></i>infoenhc@gmail.com</p>
+                <div class="d-flex justify-content-center justify-content-md-start pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://x.com/enhacemodel"><i class="fab fa-twitter"></i></a>
+                    <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
+                    <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/enhancemodel.ai/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/enhancemodel-ai/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h5 class="text-white mb-4">Popular Link</h5>
+                <a class="btn btn-link" href="/about.html">About Us</a>
+                <a class="btn btn-link" href="/contact.html">Contact Us</a>
+                <a class="btn btn-link" href="/service.html">Service</a>
+                <a class="btn btn-link" href="/project.html">project</a>
+                <a class="btn btn-link" href="">Career</a>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <h5 class="text-white mb-4">Project Gallery</h5>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/fitness bot.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/SEO bot.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/legel bot.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/medical bot.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/portfolio-5.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/portfolio-6.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-lg-5">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom " style="color: white;" href="#">enhc</a>, All Right Reserved. 
+                    Designed By <a class="border-bottom"style="color: white;" href="">itdelve</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('email-input');
+            const submitButton = this.querySelector('button[type="submit"]');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const alertContainer = document.getElementById('alertContainer');
+            const paperPlaneIcon = submitButton.querySelector('i');
+            
+            // Validate email
+            if (!emailInput.value || !emailInput.value.includes('@')) {
+                alertContainer.innerHTML = `
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        Please enter a valid email address.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Show loading state
+            emailInput.disabled = true;
+            submitButton.disabled = true;
+            paperPlaneIcon.style.display = 'none';
+            loadingSpinner.style.display = 'inline-block';
+            
+            try {
+                const response = await fetch('/subscribe-newsletter', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email: emailInput.value })
+                });
+        
+                const data = await response.json();
+        
+                // Display alert
+                const alertClass = response.ok ? 'alert-success' : 'alert-danger';
+                alertContainer.innerHTML = `
+                    <div class="alert ${alertClass} alert-dismissible fade show">
+                        ${data.message}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                `;
+        
+                if (response.ok) {
+                    emailInput.value = ''; // Clear the input on success
+                }
+        
+            } catch (error) {
+                console.error('Error:', error);
+                alertContainer.innerHTML = `
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        An error occurred. Please try again later.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                `;
+            } finally {
+                // Reset form state
+                emailInput.disabled = false;
+                submitButton.disabled = false;
+                loadingSpinner.style.display = 'none';
+                paperPlaneIcon.style.display = 'inline-block';
+            }
+        });
+        
+        // Auto-dismiss alerts after 5 seconds
+        document.addEventListener('DOMContentLoaded', function() {
+            setInterval(() => {
+                const alerts = document.querySelectorAll('.alert.show');
+                alerts.forEach(alert => {
+                    const bsAlert = new bootstrap.Alert(alert);
+                    bsAlert.close();
+                });
+            }, 5000);
+        });
+        </script>
+    
+</body>
+
+
+</html>
