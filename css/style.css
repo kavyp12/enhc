@@ -457,6 +457,9 @@ h6,
         max-width: 100%;
         height: auto;
     }
+    .team-mobile {
+        width: 85%;
+    }
 }
 
 
@@ -614,6 +617,7 @@ h6,
 @media (max-width: 768px) {
     .portfolio-item {
         margin-bottom: 20px;
+        /* margin:5%; */
     }
 
     #portfolio-flters {
@@ -636,7 +640,7 @@ h6,
 }
 
 
-/*** Project Portfolio ***/
+
 /* Button Styles */
 #portfolio-flters .btn {
     position: relative;
